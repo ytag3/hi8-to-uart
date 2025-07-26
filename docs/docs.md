@@ -18,9 +18,9 @@ Basic info on design, system layout, and communication for Hi8 video capture.
 
 ## 2. System Overview
 
-`Hi8 Camcorder → ADV7180 → STM32F407 → UART → PC`
+`Hi8 Camcorder → ADV7182A → STM32F407 → UART → PC`
 
-- ADV7180 outputs 8-bit grayscale video  
+- ADV7182A outputs 8-bit grayscale video  
 - STM32 captures data via GPIO sync signals  
 - Buffer frames in RAM, stream over UART  
 - Phase 1 uses simulated frames to implement basic project structure
@@ -40,7 +40,7 @@ Basic info on design, system layout, and communication for Hi8 video capture.
 
 ## 4. Roadmap
 
-- I2C driver + ADV7180 setup  
+- I2C driver + ADV7182 setup  
 - Capture real frames via GPIO  
 - DMA/interrupt UART transfer  
 - FreeRTOS tasks  
