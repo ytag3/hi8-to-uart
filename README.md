@@ -29,7 +29,7 @@ This is built from scratch to explore hands-on how analog signals get converted 
 ## Hardware & Tools
 - MCU: STM32F407G Discvoery Board
 - Video Source: Generated / Hi8 camcorder with composite output
-- **Decoder: TBD**
+- Decoder: Analog Devices ADV7182A
 - UART to USB adapter
 
 ## Quick Start 
@@ -37,6 +37,7 @@ This is built from scratch to explore hands-on how analog signals get converted 
 
 ## Tasks
 [] Simulate grayscale video data and stream it over UART
+[] Design PCB for decoder interfacing
 [] Interface with a read video decoder over I2C (driver development + configuration)
 [] Switch UART to DMA/interrupt mode
 [] Add FreeRTOS task-based architeture 
